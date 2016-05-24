@@ -16,7 +16,8 @@
     "express": "^4.13.4",
     "jquery": "^2.2.3",
     "method-override": "^2.3.5",
-    "mongoose": "^4.4.16"
+    "mongoose": "^4.4.16",
+    "morgan": "^1.7.0"
   },
   "devDependencies": {
     "browser-sync": "^2.12.7",

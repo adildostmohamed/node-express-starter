@@ -2,6 +2,7 @@ var express = require('express');
 var app = express();
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
+var morgan = require('morgan');
 var methodOverride = require('method-override');
 
 //APP CONFIG
@@ -13,6 +14,8 @@ app.use(express.static('public'));
 app.use(bodyParser.urlencoded({extended: true}));
 //use method-override to update form methods
 app.use(methodOverride("_method"));
+//log requests to the console
+app.user(morgan('dev'));
 
 
 //DB SET UP
