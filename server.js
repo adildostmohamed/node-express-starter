@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 //use method-override to update form methods
 app.use(methodOverride("_method"));
 //log requests to the console
-app.user(morgan('dev'));
+app.use(morgan('dev'));
 
 
 //DB SET UP
