@@ -10,6 +10,10 @@ var methodOverride = require('method-override');
 app.set('view engine', 'ejs');
 //set public directory for static assets
 app.use(express.static('public'));
+//make a static path to reference js files held in node_modules directory
+app.use('/scripts/vendor', express.static(__dirname + '/node_modules/'));
+//make a static path to reference css files in node_modules directory
+app.use('/css/vendor', express.static(__dirname + '/node_modules/'));
 //use bodyParser to get values from forms
 app.use(bodyParser.urlencoded({extended: true}));
 //use method-override to update form methods
