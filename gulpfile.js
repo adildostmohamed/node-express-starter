@@ -6,7 +6,7 @@ var concat = require('gulp-concat');
 var order = require('gulp-order');
 var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
-var uglify = require('gulp-uglifyjs');
+var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 
 gulp.task('browser-sync', ['sass'], function(){
